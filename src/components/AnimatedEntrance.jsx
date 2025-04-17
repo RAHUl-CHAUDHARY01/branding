@@ -57,7 +57,7 @@ export default function AnimatedCompanyEntrance() {
                 
                 <span>Our Company</span>
               </span>
-              <span className="block">Service!</span>
+              <span className="block">Service<span className='text-blue-700 font-[500]'>!</span></span>
             </h1>
           </div>
 
