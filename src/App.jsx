@@ -1,19 +1,13 @@
 import React, { useEffect, useState } from 'react'
 import './assets/fonts/fonts.css';
-// import Microsoft.ProjectPage from './components/LandingPage'
-import ImageHoverExpand from './components/LandingPage'
-import AnimatedImageGallery from './components/LandingPage'
-import CustomViewCursor from './components/cursor'
-import VisibleViewCursor from './components/cursor'
-import AnimatedEntrance from './components/AnimatedEntrance'
 import ResponsiveNavbar from './components/Navbar'
 import AnimatedCompanyEntrance from './components/AnimatedEntrance'
 import Footer from './components/Footer'
 import ContactForm from './components/Contact'
 import AboutUs from './components/AboutUs'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import Cursor from './components/cursor'
 import AllWorkPage from './components/AllWorkPage'
+import ScrollToTop from './ScrollToTop';
 
 function App() {
 
@@ -21,6 +15,7 @@ function App() {
   return (
     <div>
       <BrowserRouter>
+      <ScrollToTop/>
       <ResponsiveNavbar/>
      <Routes>
 <Route path='/' element={<AnimatedCompanyEntrance/>}/>

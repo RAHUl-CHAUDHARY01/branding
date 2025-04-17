@@ -2,11 +2,11 @@ import { useState, useEffect } from 'react';
 import { ArrowRight, Filter, Search, X, ArrowLeft } from 'lucide-react';
 
 // Assuming you'd import the same images as in your gallery
-import r2 from '../assets/r2.jpg';
-import r3 from '../assets/r3.jpg';
-import r4 from '../assets/r4.jpg';
-import r5 from '../assets/r5.webp';
-import r6 from '../assets/r6.jpg';
+import r2 from '../assets/branding.jpg';
+import r3 from '../assets/paia.png';
+import r4 from '../assets/cho.jpg';
+import r5 from '../assets/packaging.png';
+import r6 from '../assets/3d.avif';
 import r7 from '../assets/r7.jpg';
 import r8 from '../assets/r8.jpg';
 import r9 from '../assets/r9.png';
