@@ -59,7 +59,7 @@ export default function DualViewGallery() {
       explorePosition: { top: "370px", left: "1370px",width:'300px',height:'400px' },
     },
     {
-      src: r5,
+      src: branding,
       alt: "Gallery image 7",
       explorePosition: { top: "170px", left: "1680px",width:'280px',height:'350px' },
     }
@@ -138,7 +138,7 @@ export default function DualViewGallery() {
     isTransitioning ? 'opacity-0' : 'opacity-100'
   } transition-opacity duration-300`}
   style={{
-    height: activeView === 'explore' ? '900px' : '600px'
+    height: activeView === 'explore' ? '700px' : '600px'
   }}
 >
 
@@ -151,7 +151,7 @@ export default function DualViewGallery() {
               onMouseUp={handleMouseUp}
               onMouseMove={handleMouseMove}
             >
-              <div className="relative w-[2200px] hide-scrollbar scrollbar-none" style={{ height: "100%" }}>
+              <div className="relative w-[2000px] hide-scrollbar scrollbar-none" style={{ height: "100%" }}>
                 {images.map((image, index) => (
                   <div
                     key={index}
