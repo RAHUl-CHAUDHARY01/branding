@@ -51,7 +51,7 @@ export default function AnimatedCompanyEntrance() {
       <div className=" bg-white py-16 ">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start">
           {/* Left side - Company title */}
-          <div className="md:w-1/2 mb-8 md:mb-6">
+          <div className="ml-2 md:w-1/2 mb-8 md:mb-6">
             <h1 className="text-[60px] font-[400] leading-tight text-black" style={{fontFamily:'Now'}}>
               <span className="flex items-center">
                 
@@ -62,7 +62,7 @@ export default function AnimatedCompanyEntrance() {
           </div>
 
           {/* Right side - Lorem Ipsum text */}
-          <div className="md:w-1/2 md:pl-12">
+          <div className="md:w-1/2 pl-4 md:pl-12">
             <p className="text-[20px] text-gray-800 leading-relaxed" style={{fontFamily:'Now'}}>
               Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem 
               Ipsum has been the industry's standard dummy text ever since the 1500s.
