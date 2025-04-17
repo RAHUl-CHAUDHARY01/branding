@@ -42,7 +42,7 @@ export default function AnimatedCompanyEntrance() {
           transitionProperty: 'transform, opacity',
         }}
       >
-        <div className="text-white text-6xl font-bold pr-16">
+        <div className="text-white text-6xl font-[600] pr-16" style={{fontFamily:'Now'}}>
           OUR COMPANY SERVICE!
         </div>
       </div>
@@ -52,7 +52,7 @@ export default function AnimatedCompanyEntrance() {
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start">
           {/* Left side - Company title */}
           <div className="md:w-1/2 mb-8 md:mb-6">
-            <h1 className="text-[50px] font-bold leading-tight text-black" style={{fontFamily:'Poppins'}}>
+            <h1 className="text-[60px] font-[400] leading-tight text-black" style={{fontFamily:'Now'}}>
               <span className="flex items-center">
                 
                 <span>Our Company</span>
@@ -63,7 +63,7 @@ export default function AnimatedCompanyEntrance() {
 
           {/* Right side - Lorem Ipsum text */}
           <div className="md:w-1/2 md:pl-12">
-            <p className="text-[20px] text-gray-800 leading-relaxed" style={{fontFamily:'Poppins'}}>
+            <p className="text-[20px] text-gray-800 leading-relaxed" style={{fontFamily:'Now'}}>
               Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem 
               Ipsum has been the industry's standard dummy text ever since the 1500s.
             </p>

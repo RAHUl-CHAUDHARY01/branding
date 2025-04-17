@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import './assets/fonts/fonts.css';
 // import Microsoft.ProjectPage from './components/LandingPage'
 import ImageHoverExpand from './components/LandingPage'
 import AnimatedImageGallery from './components/LandingPage'

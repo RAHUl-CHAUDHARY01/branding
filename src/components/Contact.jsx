@@ -37,7 +37,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="min-h-screen bg-white px-8 py-12 font-[poppins]">
+    <div className="min-h-screen bg-white px-8 py-12" style={{fontFamily:'Now'}}>
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col md:flex-row md:justify-between items-start md:items-center mb-12 border-b pb-6">
           <h1 className="text-4xl md:text-5xl font-bold mb-2">Get in touch</h1>

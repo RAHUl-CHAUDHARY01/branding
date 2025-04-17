@@ -9,6 +9,12 @@ import r7 from '../assets/r7.jpg';
 import r8 from '../assets/r8.jpg';
 import r9 from '../assets/r9.png';
 import r10 from '../assets/r10.png';
+import branding from '../assets/branding.jpg';
+import paia from '../assets/paia.png';
+import packaging from '../assets/packaging.png';
+import d3 from '../assets/3d.avif';
+import cho from '../assets/cho.jpg';
+import img2 from '../assets/img2.jpg';
 import { ArrowRight, CircleDot, CirclePause } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 export default function DualViewGallery() {
@@ -23,39 +29,39 @@ export default function DualViewGallery() {
   // Sample image data
   const images = [
     {
-      src: r7,
+      src: branding,
       alt: "Gallery image 1",
-      explorePosition: { top: "280px", left: "30px",width:'300px',height:'200px' },
+      explorePosition: { top: "330px", left: "30px",width:'380px',height:'400px' },
     },
     {
-      src: r9,
+      src: paia,
       alt: "Gallery image 2",
-      explorePosition: { top: "100px", left: "380px",width:'300px',height:'300px' },
+      explorePosition: { top: "250px", left: "380px",width:'280px',height:'400px' },
     },
     {
-      src:r8,
+      src:img2,
       alt: "Gallery image 3",
-      explorePosition: { top: "180px", left: "750px",width:'250px',height:'300px' },
+      explorePosition: { top: "80px", left: "680px",width:'250px',height:'240px' },
     },
     {
-      src: r4,
+      src: d3,
       alt: "Gallery image 4",
-      explorePosition: { top: "120px", left: "1050px",  width:'300px',height:'200px' },
+      explorePosition: { top: "420px", left: "800px",  width:'240px',height:'300px' },
     },
     {
-      src: r10,
+      src: cho,
       alt: "Gallery image 5",
-      explorePosition: { top: "230px", left: "1250px",width:'280px',height:'300px' },
+      explorePosition: { top: "230px", left: "1050px",width:'280px',height:'300px' },
     },
     {
-      src: r6,
+      src: img2,
       alt: "Gallery image 6",
-      explorePosition: { top: "170px", left: "1570px",width:'300px',height:'200px' },
+      explorePosition: { top: "370px", left: "1370px",width:'300px',height:'400px' },
     },
     {
       src: r5,
       alt: "Gallery image 7",
-      explorePosition: { top: "200px", left: "1880px",width:'300px',height:'300px' },
+      explorePosition: { top: "170px", left: "1680px",width:'280px',height:'350px' },
     }
   ];
 
@@ -118,26 +124,29 @@ export default function DualViewGallery() {
           top: "30px",
           left: "30px",
           fontSize: "40px",
-          fontFamily: "poppins",
+          fontFamily: "Now",
         }}
       >
         <p className="font-semibold">Mattered</p>
-        <span className="text-xl font-light">A UI/UX APPLICATION PROJECT</span>
+        <span className="text-2xl font-light">A 3D ANIMATION & UIUX, DEVELOP AND BRANDING</span>
       </div>
   
       {/* Main gallery container aligned next to the text */}
       <div className="relative">
-        <div
-          className={`w-full overflow-hidden ${
-            isTransitioning ? 'opacity-0' : 'opacity-100'
-          } transition-opacity duration-300`}
-          style={{ height: "600px" }}
-        >
+      <div
+  className={`w-full overflow-hidden ${
+    isTransitioning ? 'opacity-0' : 'opacity-100'
+  } transition-opacity duration-300`}
+  style={{
+    height: activeView === 'explore' ? '900px' : '600px'
+  }}
+>
+
           {/* Explore View */}
           {activeView === 'explore' && (
             <div
               ref={scrollRef}
-              className=" h-full overflow-x-auto cursor-grab overflow-y-hidden"
+              className=" h-full overflow-x-auto cursor-grab overflow-y-hidden hide-scrollbar"
               onMouseDown={handleMouseDown}
               onMouseUp={handleMouseUp}
               onMouseMove={handleMouseMove}
@@ -232,7 +241,7 @@ export default function DualViewGallery() {
         </div>
 
         <div className='ml-4 mt-6 flex justify-center items-center gap-2 flex px-4 py-2 rounded-full' onClick={()=> navigate('/all-work')}>
-          <button className='flex justify-center items-center gap-2 flex px-4 py-2  bg-black rounded-full text-white' style={{fontFamily: "poppins"}} >
+          <button className='flex justify-center items-center gap-2 flex px-4 py-2  bg-black rounded-full text-white' style={{fontFamily: "Now"}} >
             All Work 
             <ArrowRight size={18}/>
           </button>

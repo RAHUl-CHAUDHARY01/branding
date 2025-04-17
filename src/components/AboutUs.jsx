@@ -98,7 +98,7 @@ const AboutUs = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-white font-[poppins]">
+    <div className="min-h-screen bg-white font-[Now]">
       {/* Hero Section with Team Photo */}
       <section className="max-w-7xl mx-auto px-8 py-12">
         <h1 className="text-4xl md:text-5xl font-bold border-b pb-6 pt-8 mb-16">About Mattered</h1>

@@ -174,7 +174,7 @@ export default function AllWorkPage() {
   }
 
   return (
-    <div className="min-h-screen bg-white px-8 py-12 font-[poppins]">
+    <div className="min-h-screen bg-white px-8 py-12" style={{fontFamily:'Now'}}>
       {/* Header */}
       <div className={` ${showSearch ? 'flex flex-col' : 'flex flex-col lg:flex-row md:justify-between md:items-center'} md:flex-row md:justify-between md:items-center mb-16`}>
         <div>

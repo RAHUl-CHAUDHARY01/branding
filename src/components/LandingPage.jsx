@@ -9,17 +9,22 @@ import r7 from '../assets/r7.jpg';
 import r8 from '../assets/r8.jpg';
 import r9 from '../assets/r9.png';
 import r10 from '../assets/r10.png';
+import branding from '../assets/branding.jpg';
+import paia from '../assets/paia.png';
+import packaging from '../assets/packaging.png';
+import d3 from '../assets/3d.avif';
+import cho from '../assets/cho.jpg';
 export default function AnimatedImageGallery() {
   const [loaded, setLoaded] = useState(false);
   const [hoveredIndex, setHoveredIndex] = useState(null);
   
   // Array of image data with captions
   const images = [
-    { src: r7, caption: "Branding",color:'black' },
-    { src: r9, caption: "UI/UX",color:'white' },
-    { src:r8, caption: "Packaging",color:'black' },
-    { src: r4, caption: "3D Design" },
-    { src:r5, caption: "Illustration" }
+    { src: branding, caption: "Branding",color:'black' },
+    { src: paia, caption: "UI/UX",color:'black' },
+    { src:packaging, caption: "Packaging",color:'black' },
+    { src: d3, caption: "3D Design" },
+    { src:cho, caption: "Illustration" }
   ];
 
   // Set loaded to true after component mounts to trigger initial animations
@@ -32,7 +37,7 @@ export default function AnimatedImageGallery() {
       {images.map((image, index) => (
         <div 
           key={index}
-          className="relative w-full overflow-hidden transition-all duration-500 ease-in-out"
+          className="relative w-full px-2 my-0.5 overflow-hidden transition-all duration-500 ease-in-out"
           style={{ 
             height: hoveredIndex === index ? '350px' : '200px',
           }}
@@ -42,7 +47,7 @@ export default function AnimatedImageGallery() {
           <img
             src={image.src}
             alt={`Image ${index + 1}`}
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover brightness-90"
           />
           <div 
             className={`absolute transition-all duration-3000 bg-opacity-40 text-white font-sans text-[40px] p-4 ${

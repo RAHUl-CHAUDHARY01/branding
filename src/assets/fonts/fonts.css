@@ -1,9 +1,7 @@
-@import "tailwindcss";
 @font-face {
     font-family: 'Now';
     src: url('./Now-Regular.otf') format('opentype');
     font-weight: 400;
-    font-style: normal;
   }
   
   @font-face {
@@ -22,16 +20,5 @@
     font-family: 'Now';
     src: url('./Now-Black.otf') format('opentype');
     font-weight: 900;
-  }
-  
-  /* Add more as needed */
-  /* Hide scrollbar for all browsers */
-.hide-scrollbar {
-    scrollbar-width: none;       /* Firefox */
-    -ms-overflow-style: none;    /* Internet Explorer 10+ */
-  }
-  
-  .hide-scrollbar::-webkit-scrollbar {
-    display: none;               /* Safari and Chrome */
   }
   
